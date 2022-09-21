@@ -1,0 +1,62 @@
+<html>
+<head>
+<script type="text/javascript">
+function getResult()
+{
+var r=document.getElementById("r").value;
+var n=document.getElementById("n").value;
+var p=parseInt(document.getElementById("p").value);
+var c=parseInt(document.getElementById("c").value);
+var m=parseInt(document.getElementById("m").value);
+var t=p+c+m;
+var per=t/3;
+var rs="";
+if(per>=33)
+rs="Pass";
+else
+rs="Fail";
+var s="<center><table border=1 cellspacing=10 cellpadding=10>";;
+s=s+"<tr><td>Roll</td><td>"+r+"</td></tr>";
+s=s+"<tr><td>Name</td><td>"+n+"</td></tr>";
+s=s+"<tr><td>Phy</td><td>"+p+"</td></tr>";
+s=s+"<tr><td>Che</td><td>"+c+"</td></tr>";
+s=s+"<tr><td>Math</td><td>"+m+"</td></tr>";
+s=s+"<tr><td>Total</td><td>"+t+"</td></tr>";
+s=s+"<tr><td>Per</td><td>"+per+"</td></tr>";
+s=s+"<tr><td>Res</td><td>"+rs+"</td></tr>";
+document.getElementById("data").innerHTML=s;
+}
+</script>
+</head>
+<body>
+<center>
+<table>
+<tr>
+<td>Enter Roll Number</td>
+<td><input type="text" id="r"></td>
+</tr>
+<tr>
+<td>Enter Name</td>
+<td><input type="text" id="n"></td>
+</tr>
+<tr>
+<td>Enter Phy Markes</td>
+<td><input type="text" id="p"></td>
+</tr>
+<tr>
+<td>Enter Che Markes</td>
+<td><input type="text" id="c"></td>
+</tr>
+<tr>
+<td>Enter Maths Markes</td>
+<td><input type="text" id="m"></td>
+</tr>
+<tr>
+<td><input type="button" value="Result" onClick="getResult()"></td>
+</tr>
+
+</table>
+<br><br>
+<div id="data"></div>
+</body>
+</html>

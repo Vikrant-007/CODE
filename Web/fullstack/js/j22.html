@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+var data=["android","core java","j2se","j2ee","j2me","core php","advance php","codeigniter","larevel","wordpress","jopomla","html","css","java script","jquery","bootstrap","angular","node","react","sql","pl sql","c","c++","ds","algorithm"];
+function getHint(dt)
+{
+var s="";
+for(i=0;i<data.length;i++)
+{
+if(data[i].includes(dt))
+s=s+data[i]+"<br>";
+}
+document.getElementById("hint").innerHTML=s;
+}
+</script>
+</head>
+<body>
+<input type="text" oninput="getHint(this.value)">
+<div id="hint"></div>
+</body>
+</html>

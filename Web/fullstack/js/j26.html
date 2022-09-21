@@ -1,0 +1,152 @@
+<html>
+<head>
+<script type="text/javascript">
+function validun()
+{
+ var up= /^[a-z A-Z\._]+$/;
+                               
+var u=document.getElementById("u").value;
+
+if(u=="")
+{
+document.getElementById("eru").innerHTML="*Enter User Name it is Mandtory";
+document.getElementById("u").style.border="2px solid red";
+}
+else
+{
+if(!up.test(u))
+{
+document.getElementById("eru").innerHTML="*Enter Valid user Name";
+document.getElementById("u").style.border="2px solid red";
+
+}
+else
+{
+document.getElementById("eru").innerHTML="";
+document.getElementById("u").style.border="2px solid green";
+}
+}
+}
+function validpn()
+{
+var u=document.getElementById("p").value;
+if(u=="")
+{
+document.getElementById("erp").innerHTML="*Enter Password it is Mandtory";
+document.getElementById("p").style.border="2px solid red";
+}
+else
+{
+if(u.length<6 || u.length>12)
+{
+document.getElementById("erp").innerHTML="*Password Must Min 6 char and max 12 char long ";
+document.getElementById("p").style.border="2px solid red";
+}
+else
+{
+if(u.indexOf(' ')>-1)
+{
+document.getElementById("erp").innerHTML="*Space not allowed in password";
+document.getElementById("p").style.border="2px solid red";
+}
+else
+{
+document.getElementById("erp").innerHTML="";
+document.getElementById("p").style.border="2px solid green";
+
+}
+}
+}
+}
+
+function validem()
+{
+var em = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; 
+                
+var u=document.getElementById("e").value;
+if(u=="")
+{
+document.getElementById("ere").innerHTML="*Enter Email it is Mandtory";
+document.getElementById("e").style.border="2px solid red";
+}
+else
+{
+if(!em.test(u))
+{
+document.getElementById("ere").innerHTML="*Enter Valid Email";
+document.getElementById("e").style.border="2px solid red";
+
+}
+else
+{
+document.getElementById("ere").innerHTML="";
+document.getElementById("e").style.border="2px solid green";
+}
+}
+}
+
+
+
+function validph()
+{
+    var mp= /^[9786][\d]{9}$/;
+var u=document.getElementById("ph").value;
+if(u=="")
+{
+document.getElementById("erph").innerHTML="*Enter Phone it is Mandtory";
+document.getElementById("ph").style.border="2px solid red";
+}
+else
+{
+if(!mp.test(u))
+{
+document.getElementById("erph").innerHTML="*Enter Valid Mobile Number";
+document.getElementById("ph").style.border="2px solid red";
+
+}
+else
+{
+document.getElementById("erph").innerHTML="";
+document.getElementById("ph").style.border="2px solid green";
+}
+}
+}
+
+</script>
+</head>
+<body>
+<center>
+<form>
+<table>
+<tr>
+<td>Enter User Name</td>
+<td><input type="text" name="u" id="u" onBlur="validun()"></td>
+<td id="eru" style="color:red"></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td><input type="text" name="p" id="p" onBlur="validpn()"></td>
+<td id="erp" style="color:red"></td>
+
+</tr>
+<tr>
+<td>Enter Email</td>
+<td><input type="text" name="e" id="e" onBlur="validem()"></td>
+<td id="ere" style="color:red"></td>
+
+</tr>
+<tr>
+<td>Enter Phone</td>
+<td><input type="text" name="ph" id="ph" onBlur="validph()"></td>
+<td id="erph" style="color:red"></td>
+
+</tr>
+
+<tr>
+<td><input type="submit" name="submit" value="Register" ></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

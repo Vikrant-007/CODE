@@ -1,0 +1,67 @@
+<html>
+<head>
+<script type="text/javascript">
+function valid()
+{
+var u=document.getElementById("u").value;
+var p=document.getElementById("p").value;
+var e=document.getElementById("e").value;
+var ph=document.getElementById("ph").value;
+if(u=="")
+{
+alert("Enter User Name it is Mandotry");
+return false;
+}
+
+if(p=="")
+{
+alert("Enter Password it is mandtory");
+return false;
+}
+
+if(e=="")
+{
+alert("Enter Email it is Mandotry");
+return false;
+}
+
+if(ph=="")
+{
+alert("Enter Phone it is Mandotry");
+
+return false
+}
+
+
+}
+</script>
+</head>
+<body>
+<center>
+<form onsubmit="return valid()">
+<table>
+<tr>
+<td>Enter User Name</td>
+<td><input type="text" name="u" id="u"></td>
+</tr>
+<tr>
+<td>Enter Password</td>
+<td><input type="text" name="p" id="p"></td>
+</tr>
+<tr>
+<td>Enter Email</td>
+<td><input type="text" name="e" id="e"></td>
+</tr>
+<tr>
+<td>Enter Phone</td>
+<td><input type="text" name="ph" id="ph"></td>
+</tr>
+
+<tr>
+<td><input type="submit" name="submit" value="Register" ></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

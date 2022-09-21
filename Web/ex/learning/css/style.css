@@ -1,0 +1,65 @@
+.title{
+    color: red;
+}
+.title:hover{
+    color: rgb(75, 209, 226);
+}
+h2{
+    color: red;
+}
+
+/* li:first-child{
+    color: blue;
+}
+li:last-child{
+    color: gray;
+}
+li:nth-child(2){
+    color: rgb(49, 139, 26);
+}
+li:only-child{
+    color: rgb(77, 185, 212);
+} */
+#google-link:link{
+    color: greenyellow;
+}
+#google-link:visited{
+    color: rgb(224, 38, 38);
+}
+h1 + p{
+    color: rgb(95, 220, 224);
+}
+textarea ~ button{
+    color: rgb(10, 143, 21);
+}
+ol > li{
+    color:rgb(199, 47, 199)
+}
+ul > li{
+    color:teal;
+}
+img[src*="../img/"]{
+    border: 3px solid violet;
+}
+.subtitle:hover{
+    color: black;
+}
+h2[class*=article-subtitle]:hover{
+    background:orange;
+    
+}
+
+div{
+    font-size: large;
+    
+}
+mark{
+    background-color: white;
+    color: red;
+}
+mark:hover{
+    background-color: orange;
+    color: black;
+    font-size: x-large;
+    border: 2px solid lime;
+}

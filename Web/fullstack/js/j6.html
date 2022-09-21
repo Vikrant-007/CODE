@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+function getAdd()
+{
+var a=parseInt(document.getElementById("f").value);
+var b=parseInt(document.getElementById("s").value);
+var c=a+b;
+document.getElementById("t").value=c;
+}
+
+function getSub()
+{
+var a=parseInt(document.getElementById("f").value);
+var b=parseInt(document.getElementById("s").value);
+var c=a-b;
+document.getElementById("t").value=c;
+}
+
+function getMul()
+{
+var a=parseInt(document.getElementById("f").value);
+var b=parseInt(document.getElementById("s").value);
+var c=a*b;
+document.getElementById("t").value=c;
+}
+function getDiv()
+{
+var a=parseInt(document.getElementById("f").value);
+var b=parseInt(document.getElementById("s").value);
+var c=a/b;
+document.getElementById("t").value=c;
+}
+
+
+</script>
+</head>
+<body>
+Enter First Number &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+<input type="text"  id="f"><br><br>
+Enter Second Number &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+<input type="text" id="s"><br><br>
+Result &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+<input type="text" id="t"><br><br>
+<input type="button" value="Add" onClick="getAdd()">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="button" value="Sub" onClick="getSub()">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="button" value="Mul" onClick="getMul()">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="button" value="Div" onClick="getDiv()">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+</body>
+</html>

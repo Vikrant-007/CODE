@@ -1,0 +1,20 @@
+<html>
+<script type="text/javascript">
+var a=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"]
+var x=0;
+function nxt()
+{
+if(x<6)
+x++;
+else
+x=0;
+document.getElementById("im").src=a[x];
+}
+
+
+</script>
+<body>
+<img src="1.jpg" height="300" width="300" id="im" onclick="nxt()">
+
+</body>
+</html>

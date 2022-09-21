@@ -1,0 +1,117 @@
+<html>
+<head>
+<script type="text/javascript">
+var ph=["Core","Advance","CMS","Framwork"];
+var java=["Core","J2SE","J2EE","J2ME"];
+var python=["Core","Advance","ML","Data Science"];
+var fst=["HTML","Java Script","Angular","React"];
+
+var php=0;
+var ja=0;
+var py=0;
+var fs=0;
+
+function getPHP()
+{
+var s="";
+if(php==0)
+{
+for(i=0;i<ph.length;i++)
+{
+s=s+"<li>"+ph[i]+"</li>";
+
+}
+php=1;
+}
+else
+{
+s="";;
+php=0;
+}
+document.getElementById("php").innerHTML=s;
+}
+
+function getJava()
+{
+var s="";
+if(ja==0)
+{
+for(i=0;i<java.length;i++)
+{
+s=s+"<li>"+java[i]+"</li>";
+
+}
+java=1;
+}
+else
+{
+s="";;
+java=0;
+}
+document.getElementById("java").innerHTML=s;
+}
+
+
+function getPython()
+{
+var s="";
+if(py==0)
+{
+for(i=0;i<python.length;i++)
+{
+s=s+"<li>"+python[i]+"</li>";
+
+}
+py=1;
+}
+else
+{
+s="";;
+py=0;
+}
+document.getElementById("python").innerHTML=s;
+}
+
+function getFST()
+{
+var s="";
+if(fs==0)
+{
+for(i=0;i<fst.length;i++)
+{
+s=s+"<li>"+fst[i]+"</li>";
+
+}
+fs=1;
+}
+else
+{
+s="";;
+fs=0;
+}
+document.getElementById("fst").innerHTML=s;
+}
+
+
+</script>
+</head>
+<body>
+<ol>
+<li onClick="getPHP()">PHP
+<ul id="php"></ul>
+</li>
+<li onClick="getJava()">Java
+<ul id="java"></ul>
+
+</li>
+<li onClick="getPython()">Python
+<ul id="python"></ul>
+
+</li>
+<li onClick="getFST()">Fullstatck
+<ul id="fst"></ul>
+
+</li>
+</ol>
+</body>
+</html>

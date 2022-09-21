@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function f1(str)
+{
+document.getElementById("im").src=str;
+}
+function f2()
+{
+var a=parseInt(document.getElementById("h").value);
+var b=parseInt(document.getElementById("w").value);
+document.getElementById("im").height=a;
+document.getElementById("im").width=b;
+
+
+}
+</script>
+</head>
+<body>
+Enter Height
+<input type="text" id="h">
+Enter Width
+<input type="text" id="w">
+<input type="button" value="Change" onClick="f2()">
+<br><br>
+<select onChange="f1(this.value)">
+<option value="1.jpg">Image 1</option>
+<option value="2.jpg">Image 2</option>
+<option value="3.jpg">Image 3</option>
+<option value="4.jpg">Image 4</option>
+<option value="5.jpg">Image 5</option>
+<option value="6.jpg">Image 6</option>
+<option value="7.jpg">Image 7</option>
+
+</select>
+<br>
+<img src="" height="300" width="300" id="im">
+</body>
+</html>

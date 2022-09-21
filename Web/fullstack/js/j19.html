@@ -1,0 +1,53 @@
+<html>
+<script type="text/javascript">
+var a=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg"]
+var x=0;
+var p=null;
+var t=0;
+function nxt()
+{
+if(x<6)
+x++;
+else
+x=0;
+document.getElementById("im").src=a[x];
+}
+
+function st()
+{
+
+p=setInterval(nxt,500);
+
+}
+
+function stp()
+{
+clearInterval(p);
+}
+
+function st1()
+{
+if(t==0)
+{
+p=setInterval(nxt,500);
+t=1;
+document.getElementById("b1").value="Stop";
+}
+else
+{
+clearInterval(p);
+t=0;
+document.getElementById("b1").value="Start";
+
+}
+}
+</script>
+<body>
+<img src="1.jpg" height="300" width="600" id="im">
+<br><br><br>
+<input type="button" value="Start" onClick="st()">
+<input type="button" value="Stop" onClick="stp()">
+<input type="button" value="Start" onClick="st1()" id="b1">
+
+</body>
+</html>
