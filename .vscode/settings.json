@@ -3,7 +3,10 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "complex": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "bitset": "cpp",
+        "algorithm": "cpp",
+        "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
